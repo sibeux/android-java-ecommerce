@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Application.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.iml" filepath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/My_Application.hacktiv8.iml" filepath="$PROJECT_DIR$/.idea/modules/app/My_Application.hacktiv8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/udemy/My_Application.udemy.iml" filepath="$PROJECT_DIR$/.idea/modules/udemy/My_Application.udemy.iml" />
+    </modules>
+  </component>
+</project>
