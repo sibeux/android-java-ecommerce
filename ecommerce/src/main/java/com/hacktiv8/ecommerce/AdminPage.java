@@ -11,7 +11,11 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,9 +23,11 @@ import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
+import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class AdminPage extends AppCompatActivity implements View.OnClickListener{
@@ -30,6 +36,8 @@ public class AdminPage extends AppCompatActivity implements View.OnClickListener
     String usernameS,passwordS,confPasswordS;
     View mDialogView;
     ProgressDialog progressDialog;
+    ArrayAdapter<CharSequence> adapter;
+    AutoCompleteTextView autoCompleteTextView;
 
     @SuppressLint("InflateParams")
     @Override
@@ -39,6 +47,9 @@ public class AdminPage extends AppCompatActivity implements View.OnClickListener
 
         addStaff = findViewById(R.id.adminAddStaff);
         addStaff.setOnClickListener(this);
+
+        addStock = findViewById(R.id.adminAddStock);
+        addStock.setOnClickListener(this);
     }
 
     void validasiData(){
@@ -74,6 +85,42 @@ public class AdminPage extends AppCompatActivity implements View.OnClickListener
                         Log.d("ErrorTambahData",""+anError.getErrorBody());
                     }
                 });
+    }
+
+    @SuppressLint("InflateParams")
+    void setAddStock(){
+        mDialogView = LayoutInflater.from(this).inflate(R.layout.add_stock_dialog,null);
+
+        AlertDialog.Builder alertDialogBuilderUserInput = new AlertDialog.Builder(this);
+        alertDialogBuilderUserInput.setView(mDialogView).setTitle("ADD STOCK");
+
+        AlertDialog alertDialog = alertDialogBuilderUserInput.create();
+        alertDialog.setCanceledOnTouchOutside(true);
+        alertDialog.show();
+
+        ArrayAdapter<CharSequence> adapterGender = ArrayAdapter.createFromResource(this,R.array.genderStock,R.layout.dropdown_item);
+        AutoCompleteTextView autoCompleteTextViewGender = mDialogView.findViewById(R.id.genderStock);
+        TextInputLayout spinnerGender = mDialogView.findViewById(R.id.spinnerGender);
+        autoCompleteTextViewGender.setAdapter(adapterGender);
+        autoCompleteTextViewGender.setOnItemClickListener((adapterView, view, i, l) -> Toast.makeText(AdminPage.this, autoCompleteTextViewGender.getText().toString(),
+                Toast.LENGTH_SHORT).show());
+
+        adapter = ArrayAdapter.createFromResource(this, R.array.typeStock,R.layout.dropdown_item);
+        autoCompleteTextView = mDialogView.findViewById(R.id.typeStock);
+        autoCompleteTextView.setAdapter(adapter);
+
+        autoCompleteTextView.setOnItemClickListener((adapterView, view, i, l) ->{
+
+                if (adapterView.getItemAtPosition(i).toString().equals("Clothing & Acc")){
+                    spinnerGender.setVisibility(View.VISIBLE);
+                } else if (adapterView.getItemAtPosition(i).toString().equals("Electronics")){
+                    spinnerGender.setVisibility(View.GONE);
+                }
+        });
+
+        progressDialog = new ProgressDialog(this);
+
+
     }
 
     @SuppressLint("InflateParams")
@@ -127,6 +174,8 @@ public class AdminPage extends AppCompatActivity implements View.OnClickListener
 
                 Toast.makeText(AdminPage.this, "Cancelled", Toast.LENGTH_SHORT).show();
             });
+        } else if (view.getId() == R.id.adminAddStock){
+            setAddStock();
         }
     }
 }
