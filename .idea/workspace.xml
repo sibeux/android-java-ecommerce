@@ -16,24 +16,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a8d2b8-a943-49aa-8d74-8a070e9a752f" name="Changes" comment="semua clear, splash screen juga udah. Tinggal nambahin detail product">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ProductDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/adapter/ProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/adapter/ProductAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_product_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_product_detail.xml" afterDir="false" />
-    </list>
+    <list default="true" id="64a8d2b8-a943-49aa-8d74-8a070e9a752f" name="Changes" comment="apps done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[scdaijvoh6qwnf7h]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -765,20 +754,6 @@
       <option name="presentableId" value="Default" />
       <updated>1661540485952</updated>
     </task>
-    <task id="LOCAL-00001" summary="create new project, because on last project get some errors">
-      <created>1661541126821</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1661541126821</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1661541256049</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1661541256049</updated>
-    </task>
     <task id="LOCAL-00003" summary="pusing euuyy, kadang MainActivity ga bisa kerun gara2 export android tiba-tiba diset ke false">
       <created>1661542326890</created>
       <option name="number" value="00003" />
@@ -1101,7 +1076,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667501255393</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="clear">
+      <created>1667503556119</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1667503556119</updated>
+    </task>
+    <task id="LOCAL-00050" summary="clear">
+      <created>1667503565032</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1667503565032</updated>
+    </task>
+    <task id="LOCAL-00051" summary="apps done">
+      <created>1667503648812</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1667503648812</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1117,8 +1113,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="merapikan baris kode" />
-    <MESSAGE value="java android hacktiv kelas ke-6&#10;membahas user experiences" />
     <MESSAGE value="android grid view" />
     <MESSAGE value="android scroll view" />
     <MESSAGE value="android web view" />
@@ -1142,6 +1136,8 @@
     <MESSAGE value="add stock clear" />
     <MESSAGE value="read data from database" />
     <MESSAGE value="semua clear, splash screen juga udah. Tinggal nambahin detail product" />
-    <option name="LAST_COMMIT_MESSAGE" value="semua clear, splash screen juga udah. Tinggal nambahin detail product" />
+    <MESSAGE value="clear" />
+    <MESSAGE value="apps done" />
+    <option name="LAST_COMMIT_MESSAGE" value="apps done" />
   </component>
 </project>
