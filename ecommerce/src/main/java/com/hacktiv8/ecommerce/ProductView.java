@@ -45,7 +45,11 @@ public class ProductView extends AppCompatActivity {
 
         Bundle data = getIntent().getExtras();
         type = data.getString("type");
-        gender = data.getString("gender");
+
+        if (data.getString("type").equals("clothing_acc")){
+            gender = data.getString("gender");
+        }
+
         category = data.getString("category");
 
         scrollRefresh();
@@ -89,12 +93,16 @@ public class ProductView extends AppCompatActivity {
                                         } else{
                                             productData = new ProductData(jo.getString("name"),"$"+jo.getString("quantity"),R.drawable.jeansprod);
                                         }
-                                    } if (jo.getString("type").equals("electronics")){
+                                    } else if (jo.getString("type").equals("Electronics")){
                                         if (jo.getString("category").equals("SMARTPHONE")){
                                             productData = new ProductData(jo.getString("name"),"$"+jo.getString("quantity"),R.drawable.smartphone);
                                         } else if (jo.getString("category").equals("COMPUTER")){
                                             productData = new ProductData(jo.getString("name"),"$"+jo.getString("quantity"),R.drawable.computer);
                                         }
+                                    } else if (jo.getString("type").equals("Books")){
+                                        productData = new ProductData(jo.getString("name"),"$"+jo.getString("quantity"),R.drawable.books);
+                                    } else if (jo.getString("type").equals("Others")){
+                                        productData = new ProductData(jo.getString("name"),"$"+jo.getString("quantity"),R.drawable.others);
                                     }
                                     productDataList.add(productData);
                                 }

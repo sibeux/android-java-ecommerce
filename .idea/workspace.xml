@@ -16,73 +16,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a8d2b8-a943-49aa-8d74-8a070e9a752f" name="Changes" comment="add stock clear">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_2_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_8_0_alpha02_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/CLothCategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ClothGenderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ElectronicsCategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ProductDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ProductView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/UserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/adapter/ProductAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/adapter/ProductData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/database/GetData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/computer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/header_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/header_bg_female.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_boy_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_computer_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_local_cafe_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_menu_book_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_phone_iphone_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_pregnant_woman_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/ic_baseline_wb_incandescent_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/jacket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/jacket2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/jeans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/jeansprod.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/shirts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/smartphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/tshirts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/uniform.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/uniform2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_cloath_gender_page.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_cloth_category_page.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_electronics_category_page.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_product_detail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_product_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_user_page.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/recyclerview_item_row.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/shr_product_grid_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="64a8d2b8-a943-49aa-8d74-8a070e9a752f" name="Changes" comment="read data from database">
+      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/books.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/drawable/others.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_home_page.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_7_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.androidTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ecommerce/My_Application.ecommerce.unitTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/res/layout/layout_staff_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/layout_staff_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/ProductView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/adapter/ProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/java/com/hacktiv8/ecommerce/adapter/ProductAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +220,7 @@
       <recent name="com.hacktiv8.ecommerce.database" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.UserPage">
+  <component name="RunManager" selected="Android App.MainActivity (1)">
     <configuration name="AdminPage" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
       <module name="My_Application.ecommerce.main" />
       <option name="DEPLOY" value="true" />
@@ -330,8 +280,8 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseApiMainActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
-      <module name="My_Application.hacktiv8.main" />
+    <configuration name="MainActivity (1)" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="My_Application.ecommerce.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -382,7 +332,7 @@
         <option name="PROFILING_MODE" value="NOT_SET" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.belajar.android.DatabaseApiMainActivity" />
+      <option name="ACTIVITY_CLASS" value="com.hacktiv8.ecommerce.MainActivity" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
@@ -441,7 +391,7 @@
         <option name="PROFILING_MODE" value="NOT_SET" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.hacktiv8.ecommerce.MainActivity" />
+      <option name="ACTIVITY_CLASS" value="com.hacktiv8.ecommerce.HomePage" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
@@ -804,11 +754,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android App.MainActivity (1)" />
         <item itemvalue="Android App.UserPage" />
         <item itemvalue="Android App.AdminPage" />
         <item itemvalue="Android App.MainActivity" />
         <item itemvalue="Android App.ProductView" />
-        <item itemvalue="Android App.DatabaseApiMainActivity" />
       </list>
     </recent_temporary>
   </component>
@@ -1143,7 +1093,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667466371193</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="read data from database">
+      <created>1667497302299</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1667497302299</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1159,7 +1116,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="list view" />
     <MESSAGE value="recycler view" />
     <MESSAGE value="merapikan baris kode" />
     <MESSAGE value="java android hacktiv kelas ke-6&#10;membahas user experiences" />
@@ -1184,6 +1140,7 @@
     <MESSAGE value="design interface spinner" />
     <MESSAGE value="add stock cloth and electronics" />
     <MESSAGE value="add stock clear" />
-    <option name="LAST_COMMIT_MESSAGE" value="add stock clear" />
+    <MESSAGE value="read data from database" />
+    <option name="LAST_COMMIT_MESSAGE" value="read data from database" />
   </component>
 </project>

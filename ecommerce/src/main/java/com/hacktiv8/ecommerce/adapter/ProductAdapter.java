@@ -28,9 +28,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ViewHolder> {
         this.mProductList = mProductList;
     }
 
-    public ProductAdapter(ProductView mContext, ArrayList<String> arrayName, ArrayList<String> arrayQuantity) {
-    }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
