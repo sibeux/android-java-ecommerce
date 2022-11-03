@@ -5,17 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -154,6 +151,16 @@ public class AdminPage extends AppCompatActivity implements View.OnClickListener
                     spinnerGender.setVisibility(View.GONE);
                     spinnerCategory.setVisibility(View.GONE);
                     spinnerCategoryElectronic.setVisibility(View.VISIBLE);
+                } else if (adapterView.getItemAtPosition(i).toString().equals("Books")){
+                    type = "Books";
+                    spinnerGender.setVisibility(View.GONE);
+                    spinnerCategory.setVisibility(View.GONE);
+                    spinnerCategoryElectronic.setVisibility(View.GONE);
+                } else if (adapterView.getItemAtPosition(i).toString().equals("Others")){
+                    type = "Others";
+                    spinnerGender.setVisibility(View.GONE);
+                    spinnerCategory.setVisibility(View.GONE);
+                    spinnerCategoryElectronic.setVisibility(View.GONE);
                 }
         });
 
@@ -201,12 +208,80 @@ public class AdminPage extends AppCompatActivity implements View.OnClickListener
             Toast.makeText(this, "Periksa kembali data yang anda masukkan !", Toast.LENGTH_SHORT).show();
         }else {
             // Clothing & Acc
-            if (type.equals("Clothing & Acc")){
-                kirimDataStock();
-            } else if (type.equals("Electronics")){
-                kirimDataStockElectro();
+            switch (type) {
+                case "Clothing & Acc":
+                    kirimDataStock();
+                    break;
+                // Electronics
+                case "Electronics":
+                    kirimDataStockElectro();
+                    break;
+                // Books
+                case "Books":
+                    kirimDataStockBooks();
+                    break;
+                // Others
+                case "Others":
+                    kirimDataStockOthers();
+                    break;
             }
         }
+    }
+
+    void kirimDataStockOthers(){
+        AndroidNetworking.post("https://sibeux.my.id/database/hacktiv_ecommerce/AddStockOthers.php")
+                .addBodyParameter("name",""+name)
+                .addBodyParameter("quantity",""+quantity)
+                .addBodyParameter("type",""+type)
+                .addBodyParameter("category",""+category)
+                .setPriority(Priority.MEDIUM)
+                .setTag("Tambah Data")
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        progressDialog.dismiss();
+                        try {
+                            String pesan = response.getString("result");
+                            Toast.makeText(AdminPage.this, "Success", Toast.LENGTH_SHORT).show();
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+
+                    @Override
+                    public void onError(ANError anError) {
+                        Log.d("ErrorTambahData",""+anError.getErrorBody());
+                    }
+                });
+    }
+
+    void kirimDataStockBooks(){
+        AndroidNetworking.post("https://sibeux.my.id/database/hacktiv_ecommerce/AddStockBook.php")
+                .addBodyParameter("name",""+name)
+                .addBodyParameter("quantity",""+quantity)
+                .addBodyParameter("type",""+type)
+                .addBodyParameter("category",""+category)
+                .setPriority(Priority.MEDIUM)
+                .setTag("Tambah Data")
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        progressDialog.dismiss();
+                        try {
+                            String pesan = response.getString("result");
+                            Toast.makeText(AdminPage.this, "Success", Toast.LENGTH_SHORT).show();
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+
+                    @Override
+                    public void onError(ANError anError) {
+                        Log.d("ErrorTambahData",""+anError.getErrorBody());
+                    }
+                });
     }
 
     void kirimDataStockElectro(){

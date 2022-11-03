@@ -14,7 +14,7 @@
         <item>Clothing &amp; Acc</item>
         <item>Electronics</item>
         <item>Books</item>
-        <item>Other</item>
+        <item>Others</item>
     </string-array>
 
     <string-array name="genderStock">
