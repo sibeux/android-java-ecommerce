@@ -9,6 +9,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinnerType"
         android:hint="Type"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
         android:layout_width="match_parent"
@@ -40,13 +41,57 @@
             tools:ignore="LabelFor" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinnerCategory"
+        android:visibility="gone"
+        android:hint="Category"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/categoryStock"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinnerCategoryElectro"
+        android:visibility="gone"
+        android:hint="Category"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/categoryStockElectro"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <EditText
-        android:id="@+id/dialogConfPasswEt"
+        android:id="@+id/nameProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
+        android:hint="Name Product"
         android:layout_marginTop="10dp"
-        android:inputType="textPassword"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/quantityProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantitiy"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
         android:minHeight="48dp"
         android:autofillHints="" />
 

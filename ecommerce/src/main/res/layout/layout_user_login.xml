@@ -48,7 +48,7 @@
     <Button
         android:id="@+id/cirLoginButton"
         style="@style/loginButton"
-        android:text="Login As user"
+        android:text="LOGIN AS USER"
         android:layout_gravity="right"
         android:layout_marginTop="@dimen/loginViewsMargin"/>
 

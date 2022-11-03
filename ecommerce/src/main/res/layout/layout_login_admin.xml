@@ -48,7 +48,7 @@
     <Button
         android:id="@+id/adminLoginButton"
         style="@style/loginButton"
-        android:text="Login As admin"
+        android:text="LOGIN AS ADMIN"
         android:layout_gravity="right"
         android:layout_marginTop="@dimen/loginViewsMargin"/>
 

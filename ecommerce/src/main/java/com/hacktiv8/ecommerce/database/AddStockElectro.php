@@ -2,21 +2,20 @@
 
 include('Connection.php');
 
-$id_cloth = $_POST['id_cloth'];
+$id_electro = $_POST['id_electro'];
 $name    = $_POST['name'];
-$gender    = $_POST['gender'];
 $category    = $_POST['category'];
 $quantity    = $_POST['quantity'];
 $type = $_POST['type'];
 
 if(!empty($name) || !empty($quantity)){
 
-    $sqlCheck = "SELECT COUNT(*) FROM clothing_acc WHERE id_cloth='new'";
+    $sqlCheck = "SELECT COUNT(*) FROM electronics WHERE id_electro='new'";
     $queryCheck = mysqli_query($conn,$sqlCheck);
     $hasilCheck = mysqli_fetch_array($queryCheck);
     if($hasilCheck[0] == 0){
-        $sql = "INSERT INTO clothing_acc (id_cloth,name,gender,category,quantity,type)
-        VALUES(NULL,'$name','$gender','$category','$quantity','$type')";
+        $sql = "INSERT INTO electronics (id_electro,name,category,quantity,type)
+        VALUES(NULL,'$name','$category','$quantity','$type')";
 
         $query = mysqli_query($conn,$sql);
 

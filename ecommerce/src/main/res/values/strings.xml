@@ -28,4 +28,9 @@
         <item>Jacket</item>
         <item>Jeans</item>
     </string-array>
+
+    <string-array name="categoryStockElectronics">
+        <item>COMPUTER</item>
+        <item>SMARTPHONE</item>
+    </string-array>
 </resources>
