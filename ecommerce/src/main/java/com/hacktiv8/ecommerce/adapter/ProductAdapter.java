@@ -1,6 +1,7 @@
 package com.hacktiv8.ecommerce.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hacktiv8.ecommerce.ProductDetail;
 import com.hacktiv8.ecommerce.ProductView;
 import com.hacktiv8.ecommerce.R;
 
@@ -44,7 +46,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ViewHolder> {
         holder.mDesc.setText(data.getQuantity());
 
         holder.cardView.setOnClickListener(view -> {
-            Toast.makeText(mContext, data.getProductName(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(mContext, ProductDetail.class);
+            intent.putExtra("name",data.getProductName());
+            intent.putExtra("quantity",data.getQuantity());
+            intent.putExtra("image",data.getProductImage());
+            mContext.startActivity(intent);
         });
     }
 

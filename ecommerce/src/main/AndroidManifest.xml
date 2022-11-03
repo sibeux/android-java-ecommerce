@@ -35,7 +35,7 @@
         </activity>
         <activity
             android:name=".ProductDetail"
-            android:exported="false"
+            android:exported="true"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
