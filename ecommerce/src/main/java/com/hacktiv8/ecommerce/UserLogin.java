@@ -115,8 +115,8 @@ public class UserLogin extends AppCompatActivity {
                             String pesan = response.getString("result");
                             if (status){
                                 Toast.makeText(UserLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
-//                                Intent intent = new Intent(UserLogin.this,StaffPage.class);
-//                                startActivity(intent);
+                                Intent intent = new Intent(UserLogin.this,UserPage.class);
+                                startActivity(intent);
                             } else{
                                 Toast.makeText(UserLogin.this, ""+pesan, Toast.LENGTH_SHORT).show();
                             }

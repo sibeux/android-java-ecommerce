@@ -28,7 +28,7 @@
         <EditText
             android:id="@+id/editText"
             style="@style/modifiedEditText"
-            android:hint="@string/login_email_hint"
+            android:hint="Username"
             android:inputType="text"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
